@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent cambio = new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(cambio);
             }
-        }, 4000);
+        }, 6000);
 
     }
 }

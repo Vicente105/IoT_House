@@ -24,8 +24,8 @@
         android:id="@+id/ivcontrol1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="116dp"
         android:fontFamily="serif-monospace"
         android:text="Energía Eléctrica"
         android:textColor="#FDFDFD"
@@ -36,14 +36,28 @@
 
     <SeekBar
         android:id="@+id/sbluz"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="296dp"
-        android:background="#000E0404"
-        android:max="100"
-        android:progressTint="#8D4FCF"
-        android:thumbTint="#8D4FCF"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="340dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:max="10"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnivel" />
+
+    <TextView
+        android:id="@+id/tvnivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="120dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvApp" />
 

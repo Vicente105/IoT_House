@@ -19,7 +19,7 @@ public class MainActivity3 extends AppCompatActivity {
         sbluz = (SeekBar) findViewById(R.id.sbluz);
 
         sbluz.setMax(10);
-        sbluz.setProgress(0);
+        sbluz.setProgress(1);
         sbluz.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {

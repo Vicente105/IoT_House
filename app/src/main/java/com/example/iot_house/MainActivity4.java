@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity4 extends AppCompatActivity {
     Button btngaraje;
-    boolean isOpen = false;
+    boolean isOpen = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

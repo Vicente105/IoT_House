@@ -2,6 +2,7 @@ package com.example.iot_house;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -23,20 +24,24 @@ public class MainActivity2 extends AppCompatActivity {
         ivnagua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent inicio=new Intent(MainActivity2.this, MainActivity5.class);
+                startActivity(inicio);
             }
         });
 
         ivgaraje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent inicio=new Intent(MainActivity2.this, MainActivity4.class);
+                startActivity(inicio);
             }
         });
 
         ivluz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent inicio=new Intent(MainActivity2.this, MainActivity3.class);
+                startActivity(inicio);
 
             }
         });

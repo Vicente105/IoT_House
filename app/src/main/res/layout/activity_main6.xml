@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvApp" />
 
     <SeekBar
-        android:id="@+id/sbluz"
+        android:id="@+id/sbtemp"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="340dp"
         android:layout_height="115dp"
@@ -59,7 +59,7 @@
         android:textColorHighlight="#FAFAFA"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sbluz" />
+        app:layout_constraintTop_toBottomOf="@+id/sbtemp" />
 
     <TextView
         android:id="@+id/tvnivel"
@@ -71,7 +71,7 @@
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sbluz" />
+        app:layout_constraintTop_toBottomOf="@+id/sbtemp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

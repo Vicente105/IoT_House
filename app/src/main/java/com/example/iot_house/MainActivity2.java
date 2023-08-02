@@ -49,6 +49,8 @@ public class MainActivity2 extends AppCompatActivity {
         ivventilador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent inicio=new Intent(MainActivity2.this, MainActivity6.class);
+                startActivity(inicio);
 
             }
         });

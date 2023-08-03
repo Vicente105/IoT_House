@@ -58,6 +58,8 @@ public class MainActivity2 extends AppCompatActivity {
         ivriego.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent inicio=new Intent(MainActivity2.this, MainActivity7.class);
+                startActivity(inicio);
 
             }
         });

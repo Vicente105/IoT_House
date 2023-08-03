@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="216dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif-monospace"
+            android:text="Smart House"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvnivev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="108dp"
+            android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvApp" />
+
+        <SeekBar
+            android:id="@+id/sbtemp"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="340dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="68dp"
+            android:max="10"
+            android:progress="0"
+            app:layout_constraintStart_toEndOf="@+id/tvnivev"
+            app:layout_constraintTop_toBottomOf="@+id/tvApp" />
+
+        <TextView
+            android:id="@+id/tvnivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="100dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/sbtemp"
+            app:layout_constraintTop_toBottomOf="@+id/tvApp" />
+
+        <TextView
+            android:id="@+id/ivcontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="96dp"
+            android:fontFamily="serif-monospace"
+            android:text="Nivel de temperatura"
+            android:textColor="#FDFDFD"
+            android:textColorHighlight="#FAFAFA"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sbtemp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

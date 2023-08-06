@@ -32,21 +32,11 @@
         app:srcCompat="@drawable/agua" />
 
     <ImageView
-        android:id="@+id/ivgaraje"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toEndOf="@+id/ivnagua"
-        app:layout_constraintTop_toBottomOf="@+id/tvApp"
-        app:srcCompat="@drawable/garaje" />
-
-    <ImageView
         android:id="@+id/ivluz"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="152dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivnagua"
         app:srcCompat="@drawable/luz" />
@@ -55,20 +45,20 @@
         android:id="@+id/ivriego"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="152dp"
         app:layout_constraintStart_toEndOf="@+id/ivluz"
-        app:layout_constraintTop_toBottomOf="@+id/ivgaraje"
+        app:layout_constraintTop_toBottomOf="@+id/ivventilador"
         app:srcCompat="@drawable/riego" />
 
     <ImageView
         android:id="@+id/ivventilador"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivriego"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/ivnagua"
+        app:layout_constraintTop_toBottomOf="@+id/tvApp"
         app:srcCompat="@drawable/ventilador" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

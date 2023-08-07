@@ -11,8 +11,8 @@
         android:id="@+id/tvApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="serif-monospace"
         android:text="Smart House"
         android:textColor="#FFFFFF"
@@ -21,26 +21,63 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvnivev"
+        android:id="@+id/tvApagado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="96dp"
-        android:text=" "
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="Apagado"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvApp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnapagar" />
+
+    <TextView
+        android:id="@+id/tvEncendido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="serif-monospace"
+        android:text="Encendido"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnencender" />
 
     <ImageView
-        android:id="@+id/btnriego"
-        android:layout_width="234dp"
-        android:layout_height="213dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="120dp"
+        android:id="@+id/btnapagar"
+        android:layout_width="175dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvnivev"
+        app:layout_constraintTop_toBottomOf="@+id/tvApp"
         app:srcCompat="@drawable/apaga" />
 
+    <ImageView
+        android:id="@+id/btnencender"
+        android:layout_width="175dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvApagado"
+        app:srcCompat="@drawable/encedido" />
+
+    <TextView
+        android:id="@+id/ivcontrol1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="serif-monospace"
+        android:text="Riego"
+        android:textColor="#FDFDFD"
+        android:textColorHighlight="#FAFAFA"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnencender" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

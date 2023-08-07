@@ -57,7 +57,7 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
     private void enviarEstadoFoco(int estado, String accion) {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.100.13/api_domotica/update_v_app.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://gopestudiante.000webhostapp.com/api_domotica/update_v_app.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
